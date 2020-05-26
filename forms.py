@@ -31,9 +31,17 @@ class RegisterForm(FlaskForm):
 class PasswordResetForm(FlaskForm):
     email = StringField('Email', validators=[
         DataRequired(), Email()
-        ])
+    ])
 
     def validate_email(self, email):
         user = User.query.filter_by(email=email.data).first()
         if user is None:
             raise ValidationError('This email address has not been registered')
+
+
+class PasswordChangeForm(FlaskForm):
+    password = PasswordField('New Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm New Password', validators=[
+        DataRequired(),
+        EqualTo('password')
+    ])
