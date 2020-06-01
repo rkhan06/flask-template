@@ -3,7 +3,7 @@ from wtforms import StringField, PasswordField,\
     BooleanField
 from wtforms.validators import DataRequired, Length, EqualTo,\
     ValidationError, Email
-from models import User
+from ..models import User
 
 
 class LoginForm(FlaskForm):
@@ -45,3 +45,4 @@ class PasswordChangeForm(FlaskForm):
         DataRequired(),
         EqualTo('password')
     ])
+

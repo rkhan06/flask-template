@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a href="{{ url_for('logout') }}">logout</a>
+<a href="{{ url_for('auth.logout') }}">logout</a>
 <h3>Users</h3>
 <ul>
     {% for user in users%}
