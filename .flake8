@@ -3,4 +3,4 @@ exclude =
     migrations,
     __pycache__,
     env,
-    __init__.py
+    __init__
