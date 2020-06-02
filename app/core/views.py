@@ -8,4 +8,4 @@ from app.core import core
 @login_required
 def index():
     users = User.query.all()
-    return render_template('index.html', users=users)
+    return render_template('core/index.html', users=users)

@@ -45,4 +45,3 @@ class PasswordChangeForm(FlaskForm):
         DataRequired(),
         EqualTo('password')
     ])
-
