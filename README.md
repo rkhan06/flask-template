@@ -1,2 +1,2 @@
-# flask-auth
-flask app with user authentication
+# Flaske Template
+Basic Flask template with user authentication
