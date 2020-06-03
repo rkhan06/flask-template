@@ -4,7 +4,7 @@
 venv
 .vscode
 .env
-app.db
+*.db
 ### Flask ###
 instance/*
 !instance/.gitignore
