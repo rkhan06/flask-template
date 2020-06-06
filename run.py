@@ -1,5 +1,4 @@
-from .app import create_app
-# from .models import User, Post, Message, Notification, Task
+from app import create_app
 
 app = create_app()
 # cli.register(app)
